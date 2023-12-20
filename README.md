@@ -8,13 +8,13 @@ This project examines three existing reinforcement learning algorithms which sto
 In practice, two different control tasks are performed. First, both the starting and target points are kept in a fixed position during both the learning and testing of the policy, whereas in the second task, the target may be anywhere in a given domain. The code allows to evaluate the three DRL algorithms on both tasks, when solving the physics with either a low-order or a high-fidelity model, and with various DRL hyperparameters, reward formulations, and environment parameters controlling the dynamics.  
   
 In order to facilitate the reproducibility of our results without requiring an in-depth understanding of the code, each case study is stored in a separate repository containing all the necessary code and setup to execute the case directly. The code for the following tasks can be found in the respective repositories:  
-- [First task with fixed target and low-order model](https://github.com/SuReLI/aerobench_fixed_target_low_order)  
+- [First task with fixed target and low-order model](https://github.com/SuReLI/aerobench_fixed_target_low_order) **<-- You are here** 
 - [First task with fixed target and CFD model](https://github.com/SuReLI/aerobench_fixed_target_star)  
 - [Second task with variable target and low-order model](https://github.com/SuReLI/aerobench_variable_target_low_order)  
 - [Second task with variable target and CFD model](https://github.com/SuReLI/aerobench_variable_target_star).  
   
   
-## Available algorithms  
+### Available algorithms  
 - **DDPG** : Deep Deterministic Policy Gradient presented in [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971).  
 - **TD3** : Twin Delayed Deep Deterministic policy gradient [Addressing Function Approximation Error in Actor-Critic Methods](https://arxiv.org/pdf/1802.09477.pdf)  
 - **SAC** : Soft Actor-Critic presented in [Soft Actor-Critic:Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor](https://arxiv.org/pdf/1801.01290.pdf)  
@@ -34,7 +34,7 @@ git clone https://github.com/SuReLI/aerobench_fixed_target_low_order
 ## Usage  
   
 ### Training phase  
-Navigate to the directory to run the first task with the low-order model:  
+Navigate to the directory to run the desired task:  
 ```bash  
 cd aerobench_fixed_target_low_order
 ```  
